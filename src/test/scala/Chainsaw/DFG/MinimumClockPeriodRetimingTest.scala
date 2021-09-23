@@ -72,6 +72,7 @@ class MinimumClockPeriodRetimingTest extends AnyFlatSpec {
 
   it should "solve the problem 2 correctly" in {
 
+    // this
     val problem2 = new DFG()
     val Seq(a, b, c, d) = Seq(20, 10, 10, 5).zipWithIndex.map { case (exeTime, i) => AbstractNode(0, exeTime, s"n$i") }
     problem2.addVertex(a)
